@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky</title>
+    <link rel="stylesheet" href="test.css">
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="title">
+            <!--給這個div一個class -> min_picture -->
+            <div class="min_picture"></div>
+            <span>何瑞基</span>
+        </div>
+
+
+        <ul>
+            <li>基本資料</li>
+            <span>英文名字: &nbsp Ricky</span><br>
+
+            <span>畢業學校: &nbsp 龍華科技大學</span><br>
+            <span>畢業科系: &nbsp 化學工程系</span>
+            <li>聯絡方式</li>
+            <span>手機: &nbsp &nbsp 0911395797</span><br>
+            <span>E-mail: herickyhe@gmail.com </span><br>
+
+            <li>工作經歷</li>
+            <span><strong>總年資
+                    16~17年</strong></span><br><br>
+            <span>2013/08~2022/02 </span> <br>
+            <span><strong>作業員</strong>
+                台灣國際航電股份有限公司</span> <br> <br>
+            <span>2013/02~2013/07 </span><br>
+            <span><strong>作業員</strong>
+                正隆股份有限公司</span> <br><br>
+            <span>2008/03~2012/06 </span> <br>
+            <span><strong>一般職員</strong>
+                匯豐銀行</span> <br> <br>
+            <span>2004/11~2008/03 </span> <br>
+            <span><strong>系統操作員</strong>
+                中華商銀</span> <br> <br>
+            <li>興趣</li>
+            <span>彈吉他</span><br>
+            <span>騎腳踏車</span><br>
+            <span>踏青、喜歡到戶外走走</span><br>
+
+            <li>留言板</li>
+            <br>
+            <textarea rows="20" cols="25">
+
+              </textarea>
+            <button>送出</button>
+
+
+
+
+
+            <div style="text-align:left;">
+                <h2 style="color: rgb(48, 101, 90);">2022/03/24 10:00:00</h2>
+            </div>
+
+            <script>
+                let clock = document.querySelector("h2");
+
+
+                let weekday = ["日", "一", "二", "三", "四", "五", "六"];
+
+
+                setInterval(function () {
+                    let time = new Date();
+                    let hour = time.getHours();
+                    if (hour < 10) hour = "0" + hour;
+                    let minutes = time.getMinutes();
+                    if (minutes < 10) minutes = "0" + minutes;
+                    // let seconds=time.getSeconds();
+                    // if(seconds<10)seconds="0"+seconds;
+                    let seconds = (time.getSeconds() < 10) ? "0" + time.getSeconds() : time.getSeconds();
+
+                    let now = time.getFullYear() + "/" + (time.getMonth() + 1) + "/" + time.getDate() + "(" + weekday[time.getDay()] + ") " + hour + ":" + minutes + ":" + seconds;
+                    clock.innerText = now;
+                    // console.log(now)
+                }, 1000)
+
+            </script>
+        </ul>
+
+
+
+    </div>
+
+
+
+    </div>
+    <div class="content">
+        <div class="banner">
+            <div class="top_picture"></div>
+            <!--<img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRiBkMMtoKQ3mdqHpOI1NsxE2ITCCgyr4lKQ&usqp=CAU style="display:block; margin:auto;" /><span style=”display:flex; justify-content: center;”-->
+            <img src="images/images7.jpg">
+            <img src="images/images6.jpg">
+            <img src="images/images5.jpg">
+            <span>大家好，我是<strong>石虎</strong>不是貓!!!</span>
+
+
+
+        </div>
+        <article>
+
+            <h2>我的家庭</h2>
+            <span>我出生於從一開始一無所有的家庭，靠著父母親的努力才有今天小康的局面，家人間彼此相處融洽。父親在鐵工廠上班已經退休，母親自己經營雜貨店因年事已高退休而結束營業。母親白手起家的精神，養成了我刻苦耐勞的個性並且從小就懂得待人處世的道理。</span><br>
+
+        </article>
+        <article>
+            <h2>求學過程</h2>
+            <span>在光武工專時取得現場監督人員安全衛生證書。後來靠著推甄考上龍華科技大學，兩年來學到不少東西，尤其是專題，從定下題目開始到蒐集整理資料。做實驗過程中深深了解一個專題該用什麼角度去思考，遇到問題的時候要想什麼辦法解決。對於未來進入社會工作時，會有相當大的幫助。</span><br>
+
+            <h2>軍旅生活</h2>
+            <span>在軍旅生活中，因為擔任船上的訓練總幹事，雖然業務繁多但同時也增加了自己的抗壓性。在訓練業務上很感謝我的隊長和學長使我學到許多寶貴經驗，從中也學到人際關係及團隊合作的重要性，相信未來能在公司中能發揮個人專長，也因此我已滿懷期待迎接各種挑戰。我秉持相信自己堅持到底的原則，一旦投入工作就會要求自己增加工作所需技能以達最佳的工作效率。
+            </span><br />
+        </article>
+        <article>
+            <h2>工作經驗</h2>
+            <span><strong>台灣國際航電</strong>是做作業員的工作。作業員的要求就是品質和效率。針對不同的產品會有不同的做法，所以需要依照SOP(標準作業程序)作業。若未依照SOP作業，有可能會被客戶退貨，所以SOP很重要。<br /><br />
+
+                在擔任作業員8年多的時間，工作內容是雷射雕刻、後灌程式、產品測試、電路板切割機分板、產品點膠作業。工作時若發生設備異常或故障，須及時通知相關人員處理。這段期間很感謝部門主管、組長、領班和同事的幫忙，讓我明白這個工作的重要性。
+
+            </span><br /><br />
+
+            <span><strong>正隆公司</strong>上班，是做操作員的工作。紙板經平軋機平軋成紙箱。平軋作業、包裝作業、負責生產線機器、設備之操作，並維持機台正常運作。
+                </spn><br><br>
+
+                <span>
+                    <strong>匯豐銀行</strong>作業中心工作期間，我做過房貸清償證明、繳款紀錄、餘額證明開立和文件管理、文件調閱以及開戶文件審核。我學習到公司內部相關法令遵循，所有工作必須依照公司內部流程規定辦理，也讓我學到如何在規定時間完成主管交付的工作，以及增加工作相關知識所需的深度和廣度。
+                </span><br><br>
+
+                <span>
+                    為了將工作做得更好，我已取得了信託業務人員、投信投顧相關法規、金融市場常識與職業道德的專業證照，能夠在相關工作上做最好的發揮。這段期間非常感謝公司主管和同事的協助，讓我在工作中學習到許多寶貴的知識，面對問題時能及時找到問題的核心和如何去處理相關的問題。
+                </span><br><br>
+
+                <span>
+                    <strong>中華商銀</strong>資訊處。我在電腦機房擔任系統操作人員，負責機電設備環境監控、網路監控、電腦批次作業和每日報表印製。若在工作上有發生設備異常和故障發生，或銀行批次出現錯誤訊息，須及時通知相關人員處理。這段期間很感謝部門主管和同事的幫忙，讓我深深體會這項工作的重要性。期間也同時取得銀行內部控制人員的證照。
+                </span><br><br>
+
+        </article>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

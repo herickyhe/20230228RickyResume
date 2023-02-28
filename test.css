@@ -1,0 +1,110 @@
+.content .banner {
+
+    width: 100%;
+    /*設定寬度為100%*/
+    height: auto;
+    /*設定高度為300px*/
+    background-color: rgb(212, 162, 105);
+
+
+}
+
+
+.title {
+    /*這邊的寬度100%是抓menu設定的寬度*/
+    width: 100%;
+    /*寫一個適合的高度*/
+    height: 135px;
+    /*設定底色為#4A4A4A*/
+    background-color: #4A4A4A;
+}
+
+.menu {
+    height: auto;
+    /*設定高度為100px*/
+    width: 250px;
+    background-color: #7C7C7C;
+    float: left;
+
+}
+
+
+ul li {
+    list-style: none;
+}
+
+
+
+
+.menu .title .min_picture {
+    background: url('images/images.jpg') no-repeat;
+    background-size: 100px auto;
+    height: 100px;
+    width: 100px;
+    background-color: #4A4A4A;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 15px 15px;
+}
+
+.menu ul li:hover {
+    background-color: #e29e9e;
+    color: #4a4a4a;
+    transition: 0.5s;
+}
+
+/*補title裡面字體的樣式*/
+.menu .title span {
+    font-size: 2em;
+    color: #ffffff;
+    /*margin-left: 20px;*/
+}
+
+.menu ul li {
+    font-size: 1.3em;
+    /* font-width: 300px; */
+    padding: 10px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+body {
+    background-color: #90a0bc;
+}
+
+textarea {
+
+    border: 1px solid rgb(126, 213, 239);
+
+}
+
+article {
+    /* text-align: center; */
+    /* text-indent: center; */
+    /* margin-left: 30px; */
+    /* padding-left: 30px; */
+}
+
+
+article span {
+
+    margin-left: 30px;
+    padding-left: 30px;
+
+}
+
+h2 {
+    color: brown;
+
+}
+
+article span strong {
+    color: rgb(136, 127, 104);
+}
+
+img {
+    width: 220px;
+    height: 220px;
+    justify-content: center;
+    color: pink;
+}
